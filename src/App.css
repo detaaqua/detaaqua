@@ -1,38 +1,279 @@
-.App {
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+  background-color: #f0f8f8; /* Match the About Me section */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  box-sizing: border-box;
+}
+
+/* About Me Section */
+.about-me {
+  background-color: #f0f8f8;
+  padding: 5rem 0;
+  text-align: center;
+  margin-top: 4rem; /* Add margin to create space between navbar and content */
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-me h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+  font-family: 'Georgia', serif;
+}
+
+.about-me h2 span {
+  font-style: italic;
+  color: #40c3b8;
+}
+
+.about-me p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  margin: 1rem auto;
+  max-width: 600px;
+  padding: 0 1rem; /* Add padding for better mobile spacing */
+}
+
+/* Stake with Us Section */
+.stake-with-us {
+  background-color: #02231e;
+  padding: 5rem 0;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.stake-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.stake-with-us h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-family: 'Georgia', serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.stake-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.stake-card {
+  background-color: #0f2e29;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stake-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.stake-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+}
+
+.stake-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #40c3b8;
+}
+
+.stake-info p {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+  color: #ddd;
+}
+
+.stake-card button {
+  background-color: black;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.stake-card button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+/* Contact Us Section */
+.contact-us {
+  background-color: #f0f8f8;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+  font-family: 'Georgia', serif;
+}
+
+.contact-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%; /* Ensure input and textarea are full width */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.form-group textarea {
+  resize: vertical; /* Allows vertical resizing */
+}
+
+.submit-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #40c3b8;
   color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.submit-button:hover {
+  background-color: #39a9a3;
+  transform: scale(1.05);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .about-me {
+    padding: 3rem 1rem; /* Adjusted padding for mobile */
+    margin-top: 6rem; /* Increase margin for better mobile spacing */
   }
-  to {
-    transform: rotate(360deg);
+
+  .about-me h2 {
+    font-size: 2.5rem; /* Adjusted for better readability on mobile */
+  }
+
+  .about-me p {
+    font-size: 1rem; /* Adjusted for mobile readability */
+    line-height: 1.6;
+  }
+
+  .stake-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 1.5rem;
+  }
+
+  .stake-with-us h2 {
+    font-size: 2rem;
+  }
+
+  .contact-content {
+    padding: 0 1.5rem; /* Ensure contact form is well spaced on mobile */
+  }
+
+  .contact-us h2 {
+    font-size: 2rem; /* Adjust heading size for mobile */
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.7rem; /* Adjust padding for mobile */
+  }
+
+  .submit-button {
+    padding: 0.7rem 1.2rem; /* Adjust button size for mobile */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about-me {
+    padding: 2rem 0.5rem; /* Further reduced padding for small screens */
+    margin-top: 7rem; /* Further increase margin for small screens */
+  }
+
+  .about-me h2 {
+    font-size: 2rem; /* Adjust font size for small screens */
+  }
+
+  .about-me p {
+    font-size: 0.9rem; /* Adjust font size for small screens */
+    line-height: 1.4; /* Tighten line spacing for small screens */
+  }
+
+  .stake-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 1.5rem;
+  }
+
+  .stake-with-us h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-form {
+    padding: 0 1rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9rem; /* Slightly smaller font on very small screens */
+    padding: 0.6rem; /* Adjust padding for small screens */
+  }
+
+  .submit-button {
+    padding: 0.6rem 1rem; /* Further reduce button padding */
   }
 }
