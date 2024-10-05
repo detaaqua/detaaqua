@@ -1,0 +1,124 @@
+/* Blog Container */
+.blog-container {
+    margin-top: 8rem; /* Add space between navbar and blog section */
+    text-align: center; /* Center the content */
+    padding: 0 1.5rem; /* Add padding for responsiveness */
+  }
+  
+  /* Blog Title */
+  .blog-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    color: #1a1a1a;
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Blog Grid */
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 3rem 2rem;
+    margin: 0 auto; /* Center the grid content */
+    max-width: 1200px;
+  }
+  
+  /* Blog Card */
+  .blog-card {
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+  }
+  
+  .blog-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    color: #40c3b8;
+  }
+  
+  .blog-card p {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    color: #ccc;
+  }
+  
+  .blog-card button {
+    background-color: #40c3b8;
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .blog-card button:hover {
+    background-color: #37a69a;
+    transform: scale(1.05);
+  }
+  
+  /* Hover effect on blog card */
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Blog grid responsive design */
+  @media only screen and (max-width: 768px) {
+    .blog-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem 1rem;
+    }
+  
+    .blog-card {
+      padding: 1.2rem;
+    }
+  
+    .blog-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .blog-card p {
+      font-size: 0.9rem;
+    }
+  
+    .blog-card button {
+      padding: 0.5rem 0.8rem;
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* Responsive for very small screens (mobile phones) */
+  @media only screen and (max-width: 480px) {
+    .blog-grid {
+      grid-template-columns: 1fr;
+      padding: 1.5rem 1rem;
+    }
+  
+    .blog-card {
+      padding: 1rem;
+    }
+  
+    .blog-card h3 {
+      font-size: 1.2rem;
+    }
+  
+    .blog-card p {
+      font-size: 0.85rem;
+    }
+  
+    .blog-card button {
+      padding: 0.4rem 0.7rem;
+      font-size: 0.8rem;
+    }
+  }
+  

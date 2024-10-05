@@ -1,0 +1,110 @@
+/* Blog Detail Section */
+.blog-detail {
+  max-width: 800px; /* Maximum width for comfortable viewing */
+  margin: 8rem auto; /* Space between navbar and content */
+  padding: 3rem 2rem; /* Padding to prevent content from feeling cramped */
+  background-color: #f9f9f9; /* Background color */
+  border-radius: 10px; /* Rounded corners for a softer appearance */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for visual depth */
+  text-align: left; /* Keep text left-aligned for better readability */
+  line-height: 1.7; /* Increase line spacing for reading comfort */
+}
+
+.blog-detail h2 {
+  font-size: 2.5rem; /* Font size for the title */
+  font-weight: bold; /* Bold title */
+  margin-bottom: 1rem; /* Space below to separate title from content */
+  color: #1e1e1e; /* Title text color */
+  text-align: center; /* Center the title */
+}
+
+.blog-detail h3 {
+  font-size: 2rem; /* Font size for subtitles */
+  margin-top: 1.5rem; /* Space above to separate subtitle from previous content */
+  margin-bottom: 0.75rem; /* Space below to separate subtitle from content below */
+  color: #333; /* Subtitle text color */
+}
+
+.blog-detail p {
+  font-size: 1.2rem; /* Font size for paragraphs */
+  line-height: 1.8; /* Line spacing for reading comfort */
+  color: #555; /* Paragraph text color */
+  margin-bottom: 1.5rem; /* Space below to separate paragraphs */
+}
+
+.blog-detail ul {
+  margin-left: 1.5rem; /* Indentation for lists */
+  margin-bottom: 1.5rem; /* Space below to separate lists from following content */
+  list-style-type: disc; /* Bullet points for lists */
+}
+
+.blog-detail ul li {
+  margin-bottom: 0.5rem; /* Space below each list item */
+}
+
+.blog-detail blockquote {
+  border-left: 4px solid #40c3b8; /* Line for block quotes */
+  margin: 1.5rem 0; /* Space above and below block quotes */
+  padding-left: 1rem; /* Padding on the left */
+  color: #555; /* Block quote text color */
+  font-style: italic; /* Italicize block quote text */
+}
+
+.blog-detail .back-link {
+  margin-top: 2rem; /* Space above the back link */
+}
+
+.blog-detail .back-link a {
+  font-size: 1.2rem; /* Font size for the link */
+  color: #40c3b8; /* Link color */
+  text-decoration: none; /* Remove underline from link */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.blog-detail .back-link a:hover {
+  color: #1e1e1e; /* Link color on hover */
+}
+
+/* Responsiveness */
+
+/* For smaller screens like tablets */
+@media only screen and (max-width: 768px) {
+  .blog-detail {
+    padding: 2rem 1.5rem; /* Reduce padding on smaller screens */
+    margin: 6rem auto; /* Reduce margin for more space */
+  }
+
+  .blog-detail h2 {
+    font-size: 2rem; /* Reduce font size for title on small screens */
+  }
+
+  .blog-detail p {
+    font-size: 1rem; /* Reduce font size for paragraphs */
+    line-height: 1.6; /* Adjust line spacing */
+  }
+
+  .blog-detail h3 {
+    font-size: 1.5rem; /* Font size for subtitles on small screens */
+  }
+}
+
+/* For very small screens like smartphones */
+@media only screen and (max-width: 480px) {
+  .blog-detail {
+    padding: 1.5rem 1rem; /* Further reduce padding for small screens */
+    margin: 5rem auto; /* Less margin on top and bottom */
+  }
+
+  .blog-detail h2 {
+    font-size: 1.8rem; /* Smaller font size for the title */
+  }
+
+  .blog-detail p {
+    font-size: 0.9rem; /* Smaller font size for paragraphs */
+    line-height: 1.5; /* Adjust line spacing */
+  }
+
+  .blog-detail h3 {
+    font-size: 1.3rem; /* Font size for subtitles */
+  }
+}

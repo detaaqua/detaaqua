@@ -8,6 +8,10 @@ const Navbar: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false); // Close the menu
+  };
+
   return (
     <header className="navbar">
       <div className="container">
@@ -17,9 +21,10 @@ const Navbar: React.FC = () => {
         <nav className={`nav-links ${isOpen ? 'open' : ''}`}>
           <button className="close-button" onClick={toggleMenu}>&times;</button> {/* Close Button */}
           <ul>
-            <li><a href="#about-me" onClick={toggleMenu}>About</a></li>
-            <li><a href="#stake-with-us" onClick={toggleMenu}>Stake</a></li>
-            <li><a className="contact-button" href="#contact-us" onClick={toggleMenu}>Contact Us</a></li>
+            <li><a href="#about-me" onClick={closeMenu}>About</a></li>
+            <li><a href="/blog" onClick={closeMenu}>Blog</a></li> {/* Direct link to blog page */}
+            <li><a href="#stake-with-us" onClick={closeMenu}>Stake</a></li>
+            <li><a className="contact-button" href="#contact-us" onClick={closeMenu}>Contact Us</a></li>
           </ul>
         </nav>
         <button className="hamburger" onClick={toggleMenu}>

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",  // Update target to es6 for better compatibility with modern JS features
     "lib": [
       "dom",
       "dom.iterable",
