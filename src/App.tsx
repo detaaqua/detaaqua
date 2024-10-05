@@ -75,7 +75,7 @@ const stakeData = [
   { name: 'Quicksilver', apr: 15, totalStaked: '$300K', image: 'https://pbs.twimg.com/profile_images/1743937771046096897/xA8ls39q_400x400.png', link: 'https://delegate-quicksilver.com' },
   { name: 'Aptos', apr: 8, totalStaked: '$900K', image: 'https://pbs.twimg.com/profile_images/1556801889282686976/tuHF27-8_400x400.jpg', link: 'https://delegate-avalanche.com' },
   { name: 'Stride', apr: 11, totalStaked: '$1M', image: 'https://pbs.twimg.com/profile_images/1678377000468205568/UY9UaLF0_400x400.png', link: 'https://delegate-solana.com' },
-  { name: 'Binance', apr: 9, totalStaked: '$2.3M', image: 'https://pbs.twimg.com/profile_images/1545419250906660864/XfukKhac_400x400.jpg', link: 'https://delegate-binance.com' },
+  { name: 'Teritori', apr: 9, totalStaked: '$2.3M', image: 'https://pbs.twimg.com/profile_images/1545419250906660864/XfukKhac_400x400.jpg', link: 'https://delegate-binance.com' },
 ];
 
 export default App;
