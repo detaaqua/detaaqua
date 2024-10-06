@@ -42,7 +42,7 @@ body {
 }
 
 .about-me p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.8;
   color: #555;
   margin: 1rem auto;
@@ -59,7 +59,7 @@ body {
 }
 
 .blog-section h2 {
-  font-size: 3rem; /* Font size for blog title */
+  font-size: 2.5rem; /* Font size for blog title */
   font-weight: bold;
   color: #1a1a1a; /* Text color for title */
   margin-bottom: 2rem; /* Space below the title */
