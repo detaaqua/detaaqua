@@ -7,7 +7,7 @@
   border-radius: 10px; /* Rounded corners for a softer appearance */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for visual depth */
   text-align: left; /* Keep text left-aligned for better readability */
-  line-height: 1.7; /* Increase line spacing for reading comfort */
+  line-height: 1.6; /* Increase line spacing for reading comfort */
 }
 
 .blog-detail h2 {
@@ -27,7 +27,7 @@
 
 .blog-detail p {
   font-size: 1.2rem; /* Font size for paragraphs */
-  line-height: 1.8; /* Line spacing for reading comfort */
+  line-height: 1.6; /* Line spacing for reading comfort */
   color: #555; /* Paragraph text color */
   margin-bottom: 1.5rem; /* Space below to separate paragraphs */
 }
@@ -46,8 +46,11 @@
   border-left: 4px solid #40c3b8; /* Line for block quotes */
   margin: 1.5rem 0; /* Space above and below block quotes */
   padding-left: 1rem; /* Padding on the left */
-  color: #555; /* Block quote text color */
-  font-style: italic; /* Italicize block quote text */
+  color: #333; /* Block quote text color */
+  font-style: normal; /* Normal style for block quotes */
+  background-color: #f6f8fa; /* Light background for block quotes */
+  border-radius: 5px; /* Rounded corners for block quotes */
+  padding: 1rem; /* Padding for block quotes */
 }
 
 /* Style for code blocks */
@@ -55,20 +58,25 @@
   background-color: #f6f8fa; /* Light background for code blocks for better contrast */
   border-radius: 5px; /* Rounded corners */
   padding: 1rem; /* Padding for the content */
-  overflow: auto; /* Scrollable if content is too wide */
   margin: 1.5rem 0; /* Space above and below */
   border: 1px solid #d1d5db; /* Subtle border for definition */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
   white-space: pre-wrap; /* Allow wrapping for long lines */
-  word-wrap: break-word; /* Break long words onto the next line */
+  overflow: auto; /* Scrollable if content is too wide */
 }
 
+/* Style for inline code */
 .blog-detail code {
   background-color: transparent; /* No background color for inline code */
   padding: 0.2rem 0.4rem; /* Padding around inline code */
   border-radius: 3px; /* Rounded corners for inline code */
   font-family: 'Courier New', Courier, monospace; /* Monospace font for inline code */
+  color: #000; /* Set font color to black for inline code */
+}
+
+/* Black font color for code inside blockquotes */
+.blog-detail blockquote code {
+  color: #000; /* Set font color to black for code in block quotes */
 }
 
 /* Back link styles */
