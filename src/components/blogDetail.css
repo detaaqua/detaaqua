@@ -3,7 +3,7 @@
   max-width: 800px; /* Maximum width for comfortable viewing */
   margin: 8rem auto; /* Space between navbar and content */
   padding: 3rem 2rem; /* Padding to prevent content from feeling cramped */
-  background-color: #f9f9f9; /* Background color */
+  background-color: #ffffff; /* White background for a clean look */
   border-radius: 10px; /* Rounded corners for a softer appearance */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for visual depth */
   text-align: left; /* Keep text left-aligned for better readability */
@@ -50,8 +50,31 @@
   font-style: italic; /* Italicize block quote text */
 }
 
+/* Style for code blocks */
+.blog-detail pre {
+  background-color: #f6f8fa; /* Light background for code blocks for better contrast */
+  border-radius: 5px; /* Rounded corners */
+  padding: 1rem; /* Padding for the content */
+  overflow: auto; /* Scrollable if content is too wide */
+  margin: 1.5rem 0; /* Space above and below */
+  border: 1px solid #d1d5db; /* Subtle border for definition */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+  white-space: pre-wrap; /* Allow wrapping for long lines */
+  word-wrap: break-word; /* Break long words onto the next line */
+}
+
+.blog-detail code {
+  background-color: transparent; /* No background color for inline code */
+  padding: 0.2rem 0.4rem; /* Padding around inline code */
+  border-radius: 3px; /* Rounded corners for inline code */
+  font-family: 'Courier New', Courier, monospace; /* Monospace font for inline code */
+}
+
+/* Back link styles */
 .blog-detail .back-link {
   margin-top: 2rem; /* Space above the back link */
+  display: inline-block; /* Ensures proper margin spacing */
 }
 
 .blog-detail .back-link a {
