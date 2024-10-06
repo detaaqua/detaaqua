@@ -90,14 +90,14 @@ body {
 }
 
 .blog-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Adjust heading size for larger screens */
   font-weight: bold;
   color: #40c3b8; /* Title color */
   margin-bottom: 0.8rem;
 }
 
 .blog-card p {
-  font-size: 1rem;
+  font-size: 1rem; /* Regular text size */
   color: #ccc; /* Text color */
   margin-bottom: 1.2rem;
 }
@@ -142,8 +142,26 @@ body {
 
 /* Responsive Blog Grid */
 @media only screen and (max-width: 768px) {
+  .about-me {
+    padding: 3rem 1rem; /* Adjusted padding for mobile */
+    margin-top: 6rem; /* Increase margin for better mobile spacing */
+  }
+
+  .about-me h2 {
+    font-size: 2.5rem; /* Adjusted for better readability on mobile */
+  }
+
+  .about-me p {
+    font-size: 1rem; /* Adjusted for mobile readability */
+    line-height: 1.6;
+  }
+
   .blog-section {
     padding: 3rem 1rem; /* Adjust padding for mobile */
+  }
+
+  .blog-section h2 {
+    font-size: 2.5rem; /* Adjusted font size for mobile */
   }
 
   .blog-grid {
@@ -366,30 +384,35 @@ body {
     padding: 3rem 1rem; /* Adjust padding for mobile */
   }
 
-  .stake-grid {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0 1.5rem;
+  .blog-section h2 {
+    font-size: 2.5rem; /* Adjusted font size for mobile */
   }
 
-  .stake-with-us h2 {
-    font-size: 2rem;
+  .blog-grid {
+    gap: 1.5rem; /* Reduce gap for smaller screens */
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
   }
 
-  .contact-content {
-    padding: 0 1.5rem; /* Ensure contact form is well spaced on mobile */
+  .blog-card {
+    flex: 1 1 100%; /* Cards take full width */
+    max-width: 90%; /* Limit max-width for better spacing */
   }
 
-  .contact-us h2 {
-    font-size: 2rem; /* Adjust heading size for mobile */
+  .blog-card h3 {
+    font-size: 1.4rem; /* Smaller heading for mobile */
   }
 
-  .form-group input,
-  .form-group textarea {
-    padding: 0.7rem; /* Adjust padding for mobile */
+  .blog-card p {
+    font-size: 0.9rem; /* Smaller text size for mobile */
   }
 
-  .submit-button {
-    padding: 0.7rem 1.2rem; /* Adjust button size for mobile */
+  .blog-card button {
+    padding: 0.5rem 0.8rem; /* Adjust button padding for smaller screens */
+    font-size: 0.85rem; /* Adjust button font size for mobile */
+  }
+
+  .view-all-link {
+    margin-top: 2rem; /* Adjust margin for better spacing */
   }
 }
 
@@ -410,6 +433,10 @@ body {
 
   .blog-section {
     padding: 3rem 0.5rem; /* Further adjust padding for blog section */
+  }
+
+  .blog-section h2 {
+    font-size: 2rem; /* Adjust heading size for small screens */
   }
 
   .stake-grid {
